@@ -1,0 +1,68 @@
+
+.menu-item {
+	display:inline;
+}
+
+
+
+.mainmenu {
+	background: #CECECE;
+	width: 59%;
+	margin: -20px 400px 50px;
+}
+
+
+
+.wrapper {
+	background: url(/src/images/bg_body.jpg);	
+}
+
+.lang-item {
+	display: inline;
+	margin: 10px;
+}
+
+
+
+
+
+.lang-list {
+	margin: -125px 120px 90px;
+}
+
+
+
+
+
+.auth {
+	/* why there's no margin-top? ".display" is crashed it. */
+	margin: -105px 880px 110px;
+	/*display: inline;*/
+}
+
+
+h1 {
+	font-size: 25px;
+}
+
+.promo {
+	margin: 100px;
+	height: 160px;
+	width: 1000px;
+	background: url(/src/images/bg_about.png) 5% no-repeat, url(/src/images/bg_promo.png) repeat;
+	padding-left: 146px;
+	padding-top: 20px;
+	font: italic bold;
+	font-style: italic;
+	text-decoration-color: #fff68d;
+}
+
+/*why it's doesn't work?!*/
+h1.promo {
+	font-style: normal;
+}
+
+
+ .logo {
+	 margin: 110px 140px;
+}
