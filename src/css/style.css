@@ -1,68 +1,102 @@
-
-.menu-item {
-	display:inline;
+body {
+	background: url(../images/bg_body.jpg)
+}
+/*wrapper*/
+.wrapper {
+	position: relative;
+}
+/*end wrapper*/
+/*-----------------------------------------------------*/
+/*header*/
+.header {
+	
 }
 
-
+.logo {
+	position: absolute;
+	top: 65px;
+	left: 140px;
+}
 
 .mainmenu {
-	background: #CECECE;
-	width: 59%;
-	margin: -20px 400px 50px;
+	width: 705px;
+	height: 40px;
+	position: absolute;
+	top: 120px;
+	left: 400px;
+	background: linear-gradient(#ddd, #999);
+	border-radius: 10px;
 }
 
-
-
-.wrapper {
-	background: url(/src/images/bg_body.jpg);	
+.menu-list {
+	/*padding: 12px;*/
+	font-size: 14px;
+	margin: 13px 10px 13px 10px;
 }
 
-.lang-item {
+.menu-item {
+	text-decoration: none;
 	display: inline;
-	margin: 10px;
+	margin: 31px;
 }
 
-
-
-
+.active {
+	background: url(../images/bg_menu-item-active.png);
+}
 
 .lang-list {
-	margin: -125px 120px 90px;
+	position: absolute;
+	top: 40px;
+	left: 120px;
 }
-
-
-
-
+	
+.lang-item {
+	display: inline;
+	margin-left: 10px;
+}
 
 .auth {
-	/* why there's no margin-top? ".display" is crashed it. */
-	margin: -105px 880px 110px;
-	/*display: inline;*/
+	position: absolute;
+	top: 40px;
+	right: 120px;
 }
-
-
-h1 {
-	font-size: 25px;
+/*end header*/
+/*-----------------------------------------------------*/
+/*content*/
+.content {
+	position: relative;
+	top: 400px;
+	bottom: 62px;
 }
 
 .promo {
-	margin: 100px;
-	height: 160px;
+	position: absolute;
 	width: 1000px;
-	background: url(/src/images/bg_about.png) 5% no-repeat, url(/src/images/bg_promo.png) repeat;
-	padding-left: 146px;
-	padding-top: 20px;
-	font: italic bold;
+	top: -200px;
+	left: 100px;
+	padding: 30px 0px 30px 146px;
+	background: url(../images/bg_about.png) 5% no-repeat, url(../images/bg_promo.png) repeat;
+	font-size: 14px;
 	font-style: italic;
-	text-decoration-color: #fff68d;
+	color: #fff68d;
+	border-radius: 10px;
 }
 
-/*why it's doesn't work?!*/
-h1.promo {
+.promo h1 {
+	margin-bottom: 20px;
+	font-size: 22px;
 	font-style: normal;
+	color: #ead4aa;
+}
+/*end content*/
+/*-----------------------------------------------------*/
+/*footer*/
+.footer {
+	position: relative;
 }
 
-
- .logo {
-	 margin: 110px 140px;
+.footer div {
+	
 }
+/*end footer*/
+/*-----------------------------------------------------*/
