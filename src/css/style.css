@@ -67,10 +67,6 @@ a:hover {
 
 .header .logo {
 	position: absolute;
-/*
-	top: 63px;
-	left: 131px;
-*/
 	left: 20px;
 	bottom: 0px;
 }
@@ -84,10 +80,6 @@ a:hover {
 .header .mainmenu {
 	display: block;
 	position: absolute;
-/*
-	top: 118px;
-	left: 397px;
-*/
 	right: 0px;
 	bottom: 0px;
 	width: auto;
@@ -103,16 +95,18 @@ a:hover {
 
 .header .mainmenu .menu-item {
 	display: inline-block;
-	color: #795a40;
+	color: #461500;
 	width: 117px;
-/*	padding: 15px 0px 15px 0px;*/
 	height: 39px;
 	line-height: 39px;
 	text-align: center;
 	margin-right: -4px;
 }
 
-.header .mainmenu .menu-item a {
+.header .mainmenu a {
+	display: block;
+	height: 70%;
+	padding-top: 10%;
 	color: inherit;
 	font: 14px Georgia, Times New Roman, serif;
 }
@@ -129,13 +123,12 @@ a:hover {
 	cursor: default;
 }
 
+.header .mainmenu .menu-item.active a:hover{
+	text-decoration: none;
+}
+
 .header .lang-list {
-/*	display: block;*/
 	position: absolute;
-/*
-	top: 42px;
-	left: 120px;
-*/
 	top: 0px;
 	left: 20px;
 }
@@ -160,12 +153,7 @@ a:hover {
 }
 
 .header .auth {
-/*	display: block;*/
 	position: absolute;
-/*
-	top: 42px;
-	right: 120px;
-*/
 	top: 0px;
 	right: 20px;
 }
@@ -189,12 +177,6 @@ a:hover {
 	display: none;
 }
 
-/*
-.header .auth .auth-link.signin {
-	color: #684a32;
-}
-*/
-
 /*-----end header------------------------------*/
 
 /*-----start content------------------------------*/
@@ -208,17 +190,14 @@ a:hover {
 }
 
 .content .promo {
-/*	position: relative;*/
 	display: block;
-/*	width: 830px;*/
 	padding: 20px;
 	padding-left: 144px;
 	margin-bottom: 54px;
-/*	padding: 30px 45px 30px 145px;*/
  	background:
 		url(../images/bg_about.png) no-repeat 56px center, url(../images/bg_promo.png) repeat;
- 	font-size: 14px;
  	font-style: italic;
+	font: 14px Georgia, Times New Roman, serif;
  	color: #f9da5a;
 	border-radius: 10px;
 	line-height: 22px;
@@ -241,9 +220,8 @@ a:hover {
 	display: block;
 	left: 20px;
 	top: 50%;
-/*	float: left;*/
 	width: auto;
-	height: auto;
+	max-height: 150px;
 	margin: -32px 0px 0px 0px;
 }
 
@@ -268,25 +246,22 @@ a:hover {
 	width: 1000px;
 	height: 75px;
 	margin: -75px 0px 0px 110px;
-	padding: 20px 0px 0px 0px;
+	padding: 40px 0px 0px 20px;
 	border-top: 1px solid rgba(215, 182, 73, 0.44);
 	color: #d7b649;
 }
 
-.footer div{
-	display: block;
-	position: absolute;
-	left: 20px;
-	bottom: 20px;
-}
+/*.footer div{*/
+/*	display: block;*/
+/*	position: absolute;*/
+/*	left: 20px;*/
+/*	bottom: 20px;*/
+/*}*/
+/* It was excess. I've change string 246 (padding) footer. */
 
 .footer .footermenu {
 	display: block;
 	position: absolute;
-/*
-	float: right;
-	margin: -16px 120px 0px 0px;
-*/
 	right: 20px;
 	bottom: 20px;
 }
