@@ -58,6 +58,16 @@ a:hover {
 
 /*-----start header------------------------------*/
 
+
+.header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.header a:hover {
+	color: #e8d1a4;
+}
+
 .header {
 	position: relative;
 	height: 160px;
@@ -69,6 +79,8 @@ a:hover {
 	position: absolute;
 	left: 20px;
 	bottom: 0px;
+	width=223px;
+	height=93px;
 }
 
 .header .logo img {
@@ -109,6 +121,10 @@ a:hover {
 	padding-top: 10%;
 	color: inherit;
 	font: 14px Georgia, Times New Roman, serif;
+}
+
+.header .mainmenu a:hover {
+	text-decoration: none;
 }
 
 .header .mainmenu .menu-item.active {
@@ -196,8 +212,8 @@ a:hover {
 	margin-bottom: 54px;
  	background:
 		url(../images/bg_about.png) no-repeat 56px center, url(../images/bg_promo.png) repeat;
- 	font-style: italic;
 	font: 14px Georgia, Times New Roman, serif;
+ 	font-style: italic;
  	color: #f9da5a;
 	border-radius: 10px;
 	line-height: 22px;
@@ -220,8 +236,10 @@ a:hover {
 	display: block;
 	left: 20px;
 	top: 50%;
-	width: auto;
-	max-height: 150px;
+	max-width: 100px;
+	max-height: 100px;
+	min-width: 50px;
+	min-height: 50px;
 	margin: -32px 0px 0px 0px;
 }
 
@@ -257,7 +275,7 @@ a:hover {
 /*	left: 20px;*/
 /*	bottom: 20px;*/
 /*}*/
-/* It was excess. I've change string 246 (padding) footer. */
+/* It was excess. I've change padding in .footer */
 
 .footer .footermenu {
 	display: block;
