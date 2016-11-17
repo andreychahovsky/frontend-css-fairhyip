@@ -1,164 +1,309 @@
-html {
-	width: 100%;
-	min-height: 100%;
+.html {
+	height: 100%;
 }
 
+/*-----common------------------------------*/
 body {
+	background: url(../images/bg_body.jpg) repeat 0 0;
 	width: 100%;
-	min-height: 100%;
-	background: url(../images/bg_body.jpg);
+	height: 100%;
+	font: 11px Verdana, Arial, sans-serif;
+	line-height: normal;
+	color: #d7cfc8;
+	cursor: default;
 }
-/*wrapper*/
+
 .wrapper {
+	width: 1200px;
 	position: relative;
+	margin-bottom: 100px;
 	min-height: 100%;
 }
-/*end wrapper*/
-/*-----------------------------------------------------*/
-/*header*/
-.header {
-	
+
+h1,
+h2 {
+	font-family: Georgia, Times New Roman, serif;
+	line-height: normal;
+	font-weight: normal;
 }
 
-.logo {
-	position: absolute;
-	top: 65px;
-	left: 140px;
-}
-
-.mainmenu {
-	text-align: justify;
-	width: auto;
-	height: 40px;
-	position: absolute;
-	top: 120px;
-	left: 400px;
-	right: 100px;
-	background: linear-gradient(#ddd, #999);
-	border-radius: 10px;
-}
-
-.menu-list {
-	margin: 3px 10px 13px 10px;
-	font-size: 14px;
-}
-
-.menu-list a {
-    color: #461500;
-		font-weight: bold;
-    text-decoration: none;
-}
-
-.menu-item {
-	display: inline-block;
-  width: 10%;
-	/*max-width: 117px;*/
-	text-align: center;
-	margin: auto 10px;
-	padding: 10px;
-	border-radius: 5px;
-}
-
-.active {
-	background: url(../images/bg_menu-item-active.png);
-}
-
-.lang-list {
-	position: absolute;
-	top: 40px;
-	left: 120px;
-}
-	
-.lang-item {
-	font-size: 11px;
-	color: #ffffff;
-	display: inline;
-	margin-left: 10px;
-}
-
-.auth {
-	text-transform: lowercase;
-	font-size: 11px;
-	color: #ffffff;
-	position: absolute;
-	top: 40px;
-	right: 120px;
-}
-/*end header*/
-/*-----------------------------------------------------*/
-/*content*/
-.content {
-	position: relative;
-	top: 400px;
-}
-
-.promo {
-	position: absolute;
-	width: auto;
-	top: -200px;
-	left: 100px;
-	right: 100px;
-	padding: 30px 0px 30px 146px;
-	background: url(../images/bg_about.png) 5% no-repeat, url(../images/bg_promo.png) repeat;
-	font-size: 14px;
-	font-style: italic;
-	color: #fff68d;
-	border-radius: 10px;
-}
-
-.promo h1 {
-	margin-bottom: 20px;
-	font-size: 22px;
-	font-style: normal;
+h1 {
 	color: #ead4aa;
+	font-size: 22px;
 }
 
-.article img {
-	margin: -40px 120px -100px;
-	float: left;
-	width: auto;
+h2 {
+	color: #fff68d;
+	font-size: 18px;
+}
+
+article {
+	margin-bottom: 0px;
+}
+
+article p {
+	margin-bottom: 0px;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #e8d1a4;
+	text-decoration: underline;
+}
+/*-----end common------------------------------*/
+
+/*-----start header------------------------------*/
+
+
+.header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.header a:hover {
+	color: #e8d1a4;
+}
+
+.header {
+	position: relative;
+	height: 160px;
+	width: 1000px;
+	margin: 42px 0px 42px 120px;
+}
+
+.header .logo {
+	position: absolute;
+	left: 20px;
+	bottom: 0px;
+	width=223px;
+	height=93px;
+}
+
+.header .logo img {
+	display: block;
+	width: 223px;
 	height: auto;
 }
 
-.article h2{
-	margin: 47px 246px 23px;
-	font-size: 18px;
-	color: #fff68d;
+.header .mainmenu {
+	display: block;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: auto;
+	background: linear-gradient(#fff, #ddd);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
 }
 
-.article p{
-	width: auto;
-	margin: auto 246px;
-	font-size: 11px;
-	color: #d7cfc8;
+.header .mainmenu .menu-list {
+	list-style: none;
 }
-/*end content*/
-/*-----------------------------------------------------*/
-/*footer*/
+
+.header .mainmenu .menu-item {
+	display: inline-block;
+	color: #461500;
+	width: 117px;
+	height: 39px;
+	line-height: 39px;
+	text-align: center;
+	margin-right: -4px;
+}
+
+.header .mainmenu a {
+	display: block;
+	height: 70%;
+	padding-top: 10%;
+	color: inherit;
+	font: 14px Georgia, Times New Roman, serif;
+}
+
+.header .mainmenu a:hover {
+	text-decoration: none;
+}
+
+.header .mainmenu .menu-item.active {
+	display: inline-block;
+	background: linear-gradient(#f1dab9, #d28e15);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.header .mainmenu .menu-item.active a{
+	cursor: default;
+}
+
+.header .mainmenu .menu-item.active a:hover{
+	text-decoration: none;
+}
+
+.header .lang-list {
+	position: absolute;
+	top: 0px;
+	left: 20px;
+}
+
+.header .lang-list .lang-item {
+	position: relative;
+	display: inline-block;
+	margin-right: 16px;
+	color: #e8d1a4;
+}
+
+.header .lang-list .lang-item::before {
+	content: '|';
+	position: absolute;
+	left: -12px;
+	top: -1px;
+	color: #fff;
+}
+
+.header .lang-list .lang-item:first-child::before {
+	display: none;
+}
+
+.header .auth {
+	position: absolute;
+	top: 0px;
+	right: 20px;
+}
+
+.header .auth .auth-link {
+	position: relative;
+	display: inline-block;
+	margin-left: 16px;
+	text-transform: lowercase;
+}
+
+.header .auth .auth-link::before {
+	content: '|';
+	position: absolute;
+	left: -12px;
+	top: -1px;
+	color: #fff;
+}
+
+.header .auth .auth-link:first-child::before {
+	display: none;
+}
+
+/*-----end header------------------------------*/
+
+/*-----start content------------------------------*/
+
+.content {
+	position: relative;
+	display: block;
+	left: 120px;
+	width: 1000px;
+	padding-bottom: 30px;
+}
+
+.content .promo {
+	display: block;
+	padding: 20px;
+	padding-left: 144px;
+	margin-bottom: 54px;
+ 	background:
+		url(../images/bg_about.png) no-repeat 56px center, url(../images/bg_promo.png) repeat;
+	font: 14px Georgia, Times New Roman, serif;
+ 	font-style: italic;
+ 	color: #f9da5a;
+	border-radius: 10px;
+	line-height: 22px;
+}
+
+.content .promo h1 {
+	padding-bottom: 20px;
+	font-style: normal;
+}
+
+.content .article {
+	position: relative;
+	display: block;
+	width: 1000px;
+	margin: 50px 0px 0px 0px;
+}
+
+.content .article img {
+	position: absolute;
+	display: block;
+	left: 20px;
+	top: 50%;
+	max-width: 100px;
+	max-height: 100px;
+	min-width: 50px;
+	min-height: 50px;
+	margin: -32px 0px 0px 0px;
+}
+
+.content .article h2 {
+	display: block;
+	margin: 0px 0px 20px 125px;
+}
+
+.content .article p {
+	display: block;
+	margin: 0px 0px 0px 125px;
+}
+
+/*-----end content------------------------------*/
+
+/*-----start footer------------------------------*/
+
 .footer {
 	position: relative;
-	width: 100%;
-	margin: 480px 100px;
-	padding: 20px;
-	color: #fff68d;
+	display: block;
+	box-sizing: border-box;
+	width: 1000px;
+	height: 75px;
+	margin: -75px 0px 0px 110px;
+	padding: 40px 0px 0px 20px;
+	border-top: 1px solid rgba(215, 182, 73, 0.44);
+	color: #d7b649;
 }
 
-.footer div{
-	float: left;
+/*.footer div{*/
+/*	display: block;*/
+/*	position: absolute;*/
+/*	left: 20px;*/
+/*	bottom: 20px;*/
+/*}*/
+/* It was excess. I've change padding in .footer */
+
+.footer .footermenu {
+	display: block;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
 }
 
-.footer nav{
-	float: right;
-	margin: -17px 190px;
+.footer .footermenu .menu-list {
+	list-style: none;
 }
 
-.footer .menu-item {
-	display: inline;
+.footer .footermenu .menu-item {
+	display: inline-block;
+	position: relative;
+	margin-left: 20px;
 }
 
-.footer .menu-list a {
-    color: #fff;
-    text-decoration: none;
+.footer .footermenu .menu-item::before {
+	position: absolute;
+	content: '|';
+	color: #fff;
+	left: -12px;
+	top: -1px;
 }
-/*end footer*/
-/*-----------------------------------------------------*/
+
+.footer .footermenu .menu-item:first-child::before {
+	display: none;
+}
+
+/*-----end footer------------------------------*/
