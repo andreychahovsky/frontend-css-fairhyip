@@ -27,11 +27,6 @@ h2 {
 	font-weight: normal;
 }
 
-h1 {
-	color: #ead4aa;
-	font-size: 22px;
-}
-
 h2 {
 	color: #fff68d;
 	font-size: 18px;
@@ -222,6 +217,8 @@ a:hover {
 .content .promo h1 {
 	padding-bottom: 20px;
 	font-style: normal;
+	color: #ead4aa;
+	font-size: 22px;
 }
 
 .content .article {
@@ -237,9 +234,9 @@ a:hover {
 	left: 20px;
 	top: 50%;
 	max-width: 100px;
-	max-height: 100px;
+	max-height: auto;
 	min-width: 50px;
-	min-height: 50px;
+	min-height: auto;
 	margin: -32px 0px 0px 0px;
 }
 
