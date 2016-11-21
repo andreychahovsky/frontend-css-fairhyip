@@ -81,7 +81,7 @@ a:hover {
 .header .logo img {
 	display: block;
 	width: 223px;
-	height: 93px;
+	height: auto;
 }
 
 .header .mainmenu {
@@ -234,10 +234,8 @@ a:hover {
 	display: block;
 	left: 20px;
 	top: 50%;
-	max-width: 100px;
-	max-height: 100px;
-	min-width: 50px;
-	min-height: 50px;
+	width: 95px;
+	height: auto;
 	margin: -32px 0px 0px 0px;
 }
 
